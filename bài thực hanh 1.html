@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 1</title>
+</head>
+<body>
+<input id="nhap"  type="number">
+<button onclick="add()">thêm</button>
+<button onclick="hien()">hiển thị</button>
+<p id="demo"></p>
+
+<script>
+  let x=0;
+  let array=[];
+  function add() {
+    array.push(document.getElementById("nhap").value);
+    alert("phần tử"+x+"là"+array[x]);x++;
+  }function hien() {
+    for (i=0;i<array.length;i++){
+      document.getElementById("demo").innerHTML=array+"<br>";
+    }
+  }
+</script>
+</body>
+</html>
